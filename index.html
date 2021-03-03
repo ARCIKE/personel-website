@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg==" crossorigin="anonymous" /> <!-- FULLPAGE.js -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
 
 <style>
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat';
     justify-content: center;
     text-align: center;
@@ -25,16 +27,32 @@ span {
 .s1 {
   background: url('../images/one.jpg');
   background-size: cover;
+  background-position: center;
+  background-position: center;
 }
 
 .s2 {
   background: url('../images/two.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 .s3 {
   background: url('../images/three.jpg');
   background-size: cover;
+  background-position: center;
+}
+
+.sd1 {
+  background: url('../images/three-one.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sd2 {
+  background: url('../images/three-two.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .h1s2 {
@@ -47,18 +65,25 @@ span {
 
 <div id="fullpage">
     <div class="section s1">
-      <h1 class="">The First Section</h1>
+      <h1>Hi, I’m Alex.</h1>
+      <h1>Nice to meet you.</h1>
 
     </div>
     <!-- *************************** -->
     <div class="section s2">
-      <h1 class="h1s2">The Second Section</h1>
+      <h3 class="h1s2">The Second Section</h3>
     </div>
     <!-- *************************** -->
-    <div class="section s3">
-      <div class="slide"><h1>[1]</h1></div>
-      <div class="slide"><h1>[2]</h1></div>
-      <div class="slide"><h1>[3]</h1></div>
+    <div class="section">
+      <div class="slide sd1">
+        <h1>STi2D.cf</h1>
+        <h5>Site allowing access to the online manual as well as Genial.ly and tools such as a binary converter</h5>
+      </div>
+      <!-- (-) -->
+      <div class="slide sd2">
+        <h1>VTC-STI.cf</h1>
+        <h5>Site to promote the recrutment of truckers in our VTC on Euro Trucks Simulator 2</h5>
+      </div>
     </div>
 </div>
 
