@@ -1,273 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VTC - STI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="sti.png" sizes="32x32" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg==" crossorigin="anonymous" /> <!-- FULLPAGE.js -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
 
-<header class="text-gray-400 bg-white body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a href="./index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img src="sti.png" alt="logo" width="25%" height="25%">
-      <span class="ml-3 text-xl">Société Transport International</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-black justify-center">
-      <a href="#team" class="mr-5 hover:text-red-400">Notre team</a>
-      <a href="#partners" class="mr-5 hover:text-red-400">Nos partenaires</a>
-      <a href="#stats" class="mr-5 hover:text-red-400">Nos statistiques</a>
-      <a href="#join" class="mr-5 hover:text-red-400">Nous-rejoindre</a>
-    </nav>
-    <div id="secretInfo" style="display: none;">https://discord.gg/RhcJtSyGSG</div>
-    <button type="button" id="btnCopy" class="inline-flex items-center bg-gray-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-black mt-4 md:mt-0">Notre discord
-    </button>
-  </div>
-</header>
+<style>
+h1 {
+    font-family: 'Montserrat';
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
 
-    <style type="text/css">  
-    * {
-      scroll-behavior: smooth;
-    }
-    </style>
+span {
+  background: white !important;
+}
 
-    <script type="text/javascript">
-      var $body = document.getElementsByTagName('body')[0];
-      var $btnCopy = document.getElementById('btnCopy');
-      var secretInfo = document.getElementById('secretInfo').innerHTML;
+.s1 {
+  background: url('../images/one.jpg');
+  background-size: cover;
+}
 
-      var copyToClipboard = function(secretInfo) {
-        var $tempInput = document.createElement('INPUT');
-        $body.appendChild($tempInput);
-        $tempInput.setAttribute('value', secretInfo)
-        $tempInput.select();
-        document.execCommand('copy');
-        $body.removeChild($tempInput);
-      }
+.s2 {
+  background: url('../images/two.jpg');
+  background-size: cover;
+}
 
-      $btnCopy.addEventListener('click', function(ev) {
-        copyToClipboard(secretInfo);
-        window.alert("Copy successful");
-      });
-    </script>
+.s3 {
+  background: url('../images/three.jpg');
+  background-size: cover;
+}
 
-<section class="text-gray-400 bg-white  body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
-        Nous sommes la <span class="bg-red-400 text-white rounded px-1">Société de Transport International</span>
-        une entreprise EURO TRUCK SIMULATOR 2
-      </h1>
+.h1s2 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 4rem;
+}
+
+</style>
+
+<div id="fullpage">
+    <div class="section s1">
+      <h1 class="">The First Section</h1>
+
     </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="sti.png">
+    <!-- *************************** -->
+    <div class="section s2">
+      <h1 class="h1s2">The Second Section</h1>
     </div>
-  </div>
-</section>
-
-<section class="text-gray-400 bg-gray-900 body-font">
-  <div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ffffff" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,266.7C640,288,800,288,960,282.7C1120,277,1280,267,1360,261.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-</svg>
-  </div>
-  <div id="team" class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white tracking-widest">Notre team</h1>
+    <!-- *************************** -->
+    <div class="section s3">
+      <div class="slide"><h1>[1]</h1></div>
+      <div class="slide"><h1>[2]</h1></div>
+      <div class="slide"><h1>[3]</h1></div>
     </div>
-    <div class="flex flex-wrap -m-2">
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/266267145153937408/c872a4c9818a705a807d6a3f8ff2aa73.png?size=128">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium">ARCIKE</h2>
-            <p class="text-gray-600">PDG - Responsable communication</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/668500588597870608/6777e636520cc3f1c53ee0bc3e8c95c2.png?size=128">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium">EXAR</h2>
-            <p class="text-gray-600">PDG - Responsable recrutement</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/427907189097889806/dd5bc8731556c1a9d460a9f5cbdbae26.png?size=128">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium">VICTOR</h2>
-            <p class="text-gray-600">PDG - Manageur</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/654386106774847500/a2c13178f90952b005ae31c473ce4cfc.png?size=128">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium">MATBOBE</h2>
-            <p class="text-gray-600">Gestionnaire</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/426041758527258626/cdc89fea31c62fafd4d07137d49c77a2.png?size=128">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium">REDSANDER</h2>
-            <p class="text-gray-600">Employé</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="partners" class="text-gray-400 bg-gray-900 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-2xl font-medium title-font mb-4 text-white tracking-widest">Nos partenaires</h1>
-    </div>
-    <div class="flex flex-wrap -m-2">
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
-          <div class="flex-grow sm:pl-8">
-            <h2 class="title-font font-medium text-lg text-white">Unknow</h2>
-            <h3 class="text-gray-500 mb-3">ENTREPRISE</h3>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
-          <div class="flex-grow sm:pl-8">
-            <h2 class="title-font font-medium text-lg text-white">Unknow</h2>
-            <h3 class="text-gray-500 mb-3">ENTREPRISE</h3>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ffffff" fill-opacity="1" d="M0,192L80,197.3C160,203,320,213,480,197.3C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-</svg>
 </div>
-</section>
 
-<section id="join" class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
-    <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
-      <h2 class="text-xs text-red-500 tracking-widest font-medium title-font mb-1">VOUS VOULEZ ÊTRE RECRUTER ?</h2>
-      <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-900">Suivez ces étapes</h1>
-    </div>
-    <div id="discord" class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
-      <button class="bg-gray-200 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
-        <svg color="#111827" fill="#E5E7EB" width="100" height="100" viewBox="0 0 48 48" class="discord-logo-container previewbox"><rect width="100%" height="100%" fill="currentfill"></rect> <defs><g><defs><path id="discord-def-face" fill="currentcolor" d="M40,12C40,12,35.415,8.412,30,8L29.512,8.976C34.408,10.174,36.654,11.891,39,14C34.955,11.935,30.961,10,24,10S13.045,11.935,9,14C11.346,11.891,14.018,9.985,18.488,8.976L18,8C12.319,8.537,8,12,8,12S2.879,19.425,2,34C7.162,39.953,15,40,15,40L16.639,37.815C13.857,36.848,10.715,35.121,8,32C11.238,34.45,16.125,37,24,37S36.762,34.45,40,32C37.285,35.121,34.143,36.848,31.361,37.815L33,40C33,40,40.838,39.953,46,34C45.121,19.425,40,12,40,12Z"></path> <g id="discord-def-face-eyes"><path id="discord-def-face-left-eye" fill="currentfill" d="M17.5,30C15.567,30,14,28.209,14,26C14,23.791,15.567,22,17.5,22S21,23.791,21,26C21,28.209,19.433,30,17.5,30Z"></path> <path id="discord-def-face-right-eye" fill="currentfill" d="M30.5,30C28.567,30,27,28.209,27,26C27,23.791,28.567,22,30.5,22S34,23.791,34,26C34,28.209,32.433,30,30.5,30Z"></path></g></defs> <g id="discordFaceID35"><use href="#discord-def-face"></use> <g id="discord-logo-eyes"><mask id="mask-right-eye-wink"><ellipse fill="#FFFFFF" ry="15" rx="15" cy="39.7" cx="35"></ellipse> <ellipse fill="#000000" ry="15" rx="15" cy="40.5" cx="34"></ellipse></mask> <mask id="mask-eyes-angry"><rect height="48" width="48" y="0" x="0" fill="#FFFFFF"></rect> <rect transform="rotate(45 24,14.5)" height="24" width="24" y="2.5" x="12" fill="#000000"></rect></mask> <g class="discord-eyes"><use xlink:href="#discord-def-face-eyes"></use></g></g></g> <mask id="mask-outer-layer"><rect width="100%" height="100%" fill="#FFFFFF"></rect> <circle r="42%" cx="50%" cy="50%" fill="#000000"></circle></mask> <mask id="mask-middle-layer"><rect width="100%" height="100%" fill="#000000"></rect> <circle r="43%" cx="50%" cy="50%" fill="#FFFFFF"></circle> <circle r="32%" cx="50%" cy="50%" fill="#000000"></circle></mask> <mask id="mask-inner-layer"><rect width="100%" height="100%" fill="#000000"></rect> <circle r="32%" cx="50%" cy="50%" fill="#FFFFFF"></circle></mask></g></defs> <g class="discord-logo swirl-animation"><use class="discord-original" xlink:href="#discordFaceID35"></use><use class="discord-inner-layer" xlink:href="#discordFaceID35" mask="url(#mask-inner-layer)"></use><use class="discord-middle-layer" xlink:href="#discordFaceID35" mask="url(#mask-middle-layer)"></use><use class="discord-outer-layer" xlink:href="#discordFaceID35" mask="url(#mask-outer-layer)"></use></g> <a href="https://discord.gg/RhcJtSyGSG"><rect width="100%" height="100%" fill-opacity="0"></rect></a> <!----></svg>
 
-<style type='text/css'>* { font-family: 'Avenir', Helvetica, Arial, sans-serif; } .discord-logo { transform: scale(0.7); transform-origin: 24px 24px; } .discord-logo.swirl-animation .discord-outer-layer { transition: transform 800ms cubic-bezier(0.7, 1, 0.7, 1); transform-origin: 50% 50%; } .discord-logo-container:hover .swirl-animation .discord-outer-layer, .animated .swirl-animation .discord-outer-layer { transform: scale(1.5) rotate(360deg); } .discord-logo.swirl-animation .discord-middle-layer { transition: transform 800ms cubic-bezier(0.5, 1, 0.5, 1); transform-origin: 50% 50%; } .discord-logo-container:hover .swirl-animation .discord-middle-layer, .animated .swirl-animation .discord-middle-layer { transform: scale(1.4) rotate(360deg); } .discord-logo.swirl-animation .discord-inner-layer { transition: transform 800ms cubic-bezier(0.3, 1, 0.3, 1); transform-origin: 50% 50%; } .discord-logo-container:hover .swirl-animation .discord-inner-layer, .animated .swirl-animation .discord-inner-layer { transform: scale(1.3) rotate(360deg); } .discord-logo.swirl-animation .discord-original { transition: visibility 0ms; transition-delay: 800ms; } .discord-logo-container:hover .swirl-animation .discord-original, .animated .swirl-animation .discord-original { visibility: hidden; transition-delay: 0ms; }</style>
-      </button>
-    </div>
-  </div>
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-      </div>
-      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">1</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-red-100 text-red-500 rounded-full inline-flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Rejoindre le discord</h2>
-          <p class="leading-relaxed">Premierement, il faut rejoindre le <a href="https://discord.gg/RhcJtSyGSG" class="hover:text-red-400">discord</a> via ce lien</p>
-        </div>
-      </div>
-    </div>
-    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-      </div>
-      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">2</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-red-100 text-red-500 rounded-full inline-flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Créé un ticket</h2>
-          <p class="leading-relaxed">Allez dans le salon <a href="" class="hover:text-re-400">#recrutement</a> et tapez <code>!ticket</code></p>
-        </div>
-      </div>
-    </div>
-    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-      </div>
-      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">3</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-red-100 text-red-500 rounded-full inline-flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Attendre la réponse d'un staff</h2>
-          <p class="leading-relaxed">Veuillez patientez jusqu'a la réponse de l'un de nos responsables afin de fixer une date pour votre entretien</p>
-        </div>
-      </div>
-    </div>
-    <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-      </div>
-      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">4</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-red-100 text-red-500 rounded-full inline-flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Passez votre entretien</h2>
-          <p class="leading-relaxed">Passez votre entretien avec le responsable recrutement afin de finalisé votre recrutement</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
 
-<footer class="text-gray-400 bg-white body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a href="https://twitter.com/blackberrystud" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-      <img class="h-20 w-20" src="sti.png" alt="logo">
-    </a>
-    <p class="text-sm text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021
-    </p>
-  </div>
-</footer>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
