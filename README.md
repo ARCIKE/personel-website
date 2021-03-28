@@ -1,4 +1,3 @@
-# ARCIKE.tk Website
+# Portfolio Website Using Tailwind CSS
 
-My personel website
- 
+This is an example reponsive one page portfolio website built using Tailwind CSS. Feel free to modify and learn from it.
