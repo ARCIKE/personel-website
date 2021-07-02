@@ -1,132 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Arcike</title>
+		<meta name="description" content="A simple portfolio">
+		<meta name="keywords" content="arcike, portfolio, alex, twitter, github">
+		<link rel="shortcut icon" href="fav.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script>document.documentElement.className = "js";
 
-        <!-- Primary Meta Tags -->
-        <title>ARCIKE</title>
-        <meta name="title" content="ARCIKE">
-        <meta name="description" content="I am a computer student and amater developer, and Owner of BlackberryStudio">
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://arcike.tk/">
-        <meta property="og:title" content="ARCIKE">
-        <meta property="og:description" content="I am a computer student and amater developer, and Owner of BlackberryStudio">
-        <meta property="og:image" content="https://arcike.tk/images/background.jpg">
-
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://arcike.tk/">
-        <meta property="twitter:title" content="ARCIKE">
-        <meta property="twitter:description" content="I am a computer student and amater developer, and Owner of BlackberryStudio">
-        <meta property="twitter:image" content="https://arcike.tk/images/background.jpg">
-
-    </head>
-    <body class="antialiased relative text-white bg-gray-800">
-        <div class="absolute w-full min-h-screen">
-            <div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom pt-20 px-12 text-white text-center" style="background-image: url('images/background.jpg')"></div>
-        </div>
-        <div class="relative z-10 flex min-h-screen h-auto justify-center items-center">
-            <div class="relative max-w-4xl">
-                <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                <div class="relative z-20 bg-gray-900 md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl">
-                    <div class="sm:flex flex-col justify-between space-y-6 py-6 md:pr-10">
-                        <div>
-                            <h2 class="text-lg">Hello, I am</h2>
-                            <h1 class="pt-1 text-5xl font-bold">Alex</h1>
-                        </div>
-                        <p class="text-xl leading-relaxed">I am a computer student and amater developer, and Owner of @BlackberryStudio</p>
-                        <div class="inline-flex text-xl text-white space-x-5">
-                            <a href="http://youtube.com/c/ARCIKE"><ion-icon name="logo-youtube" class="hover:text-red-600"></ion-icon></a>
-                            <a href="http://twitter.com/arcike_off"><ion-icon name="logo-twitter" class="hover:text-blue-500"></ion-icon></a>
-                            <a href="https://github.com/ARCIKE"><ion-icon name="logo-github" class="hover:text-purple-500"></ion-icon></a>
-                        </div>
-                    </div>
-                    <img src="https://avatars.githubusercontent.com/u/64358227?v=4" alt="Arcike's logo" class="flex-shrink-0 rounded-full border-6 w-auto h-auto border-white shadow-md"/>
-                </div>
-            </div>
-        </div>
-
-        <section class="bg-gray-800 pt-20 pb-28 px-8">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center">
-                    <h1 class="text-6xl font-bold text-white">My Tools</h1>
-                </div>
-                <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
-                    <div class="relative">
-                        <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                        <div class="relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-12">
-                            <h2 class="pt-3 font-bold text-2xl">
-                                Pycharm
-                            </h2>
-                            <h2 class="font-bold text-base text-gray-300">
-                                The Python IDE for Professional Developers
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                        <div class="relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-12">
-                            <h2 class="pt-3 font-bold text-2xl">
-                                IntelliJ IDEA
-                            </h2>
-                            <h2 class="font-bold text-base text-gray-300">
-                                Capable and Ergonomic IDE for JVM
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gray-800 pt-20 pb-28 px-8">
-            <div class="max-w-6xl mx-auto">
-                <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-                    <div class="relative">
-                        <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                        <div class="relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-12">
-                            <ion-icon name="logo-css3" class="text-5xl text-red-500"></ion-icon>
-                            <h2 class="pt-3 font-bold text-2xl">
-                                TailwindCSS
-                            </h2>
-                            <h2 class="font-bold text-base text-gray-300">
-                                Framework
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                        <div class="relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-12">
-                            <ion-icon name="logo-python" class="text-5xl text-red-500"></ion-icon>
-                            <h2 class="pt-3 font-bold text-2xl">
-                                Python
-                            </h2>
-                            <h2 class="font-bold text-base text-gray-300">
-                                Language
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute z-10 inset-0 bg-gradient-to-r from-red-400 to-purple-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
-                        <div class="relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-12">
-                            <ion-icon name="logo-discord" class="text-5xl text-red-500"></ion-icon>
-                            <h2 class="pt-3 font-bold text-2xl">
-                                Discord.JS
-                            </h2>
-                            <h2 class="font-bold text-base text-gray-300">
-                                API
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    </body>
+supportsCssVars() || alert("Please view this website in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-3 loading">
+		<main>
+			<div class="message">Please view this website on a desktop to see the effect.</div>
+			<div class="message">Veuillez regarder ce site Web sur un ordinateur de bureau pour voir l'effet.</div>
+			<div class="frame">
+				<div class="frame__links no-select">
+					<a href="https://twitter.com/arcike_off">Twitter</a>
+					<a href="https://github.com/ARCIKE">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="grid grid--img">
+					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1557853197-aefb550b6fdc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1566837945700-30057527ade0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);"></div></div>
+				</div>
+				<h2 class="content__title no-select">
+					<span class="content__title-sub">ARCIKE</span>
+				</h2>
+			</div>
+		</main>
+        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+		</svg>
+		<script src="scripts.js"></script>
+	</body>
 </html>
